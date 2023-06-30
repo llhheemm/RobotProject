@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.3 on win32)" generated="20230629 11:33:23.607" rpa="false" schemaversion="4">
+<suite id="s1" name="LoginTest" source="C:\Users\Reimel.Natividad\PycharmProjects\RobotProject\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Verify user login" line="10">
+<kw name="Start TestCase" library="common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demowebshop.tricentis.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 11:33:23.843" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<msg timestamp="20230629 11:33:23.848" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230629 11:33:23.843" endtime="20230629 11:33:30.095"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230629 11:33:30.095" endtime="20230629 11:33:30.217"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230629 11:33:30.217" endtime="20230629 11:33:30.218"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:23.842" endtime="20230629 11:33:30.218"/>
+</kw>
+<kw name="Click login link" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230629 11:33:30.221" level="INFO">Clicking element 'xpath://*[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20230629 11:33:30.219" endtime="20230629 11:33:32.728"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:30.219" endtime="20230629 11:33:32.728"/>
+</kw>
+<kw name="Click email field" library="LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_field}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 11:33:32.729" level="INFO">Typing text 'buggytest006@gmail.com' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20230629 11:33:32.729" endtime="20230629 11:33:35.822"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:32.729" endtime="20230629 11:33:35.822"/>
+</kw>
+<kw name="Click password field" library="LoginPage">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230629 11:33:35.823" level="INFO">Typing password into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20230629 11:33:37.916" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230629 11:33:39.042" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230629 11:33:35.823" endtime="20230629 11:33:39.042"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:35.822" endtime="20230629 11:33:39.043"/>
+</kw>
+<kw name="Click login button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230629 11:33:39.046" level="INFO">Clicking button 'xpath://input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20230629 11:33:39.045" endtime="20230629 11:33:42.933"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:39.044" endtime="20230629 11:33:42.933"/>
+</kw>
+<kw name="Finish TestCase" library="common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 11:33:42.936" endtime="20230629 11:33:46.131"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:42.935" endtime="20230629 11:33:46.131"/>
+</kw>
+<status status="PASS" starttime="20230629 11:33:23.842" endtime="20230629 11:33:46.131"/>
+</test>
+<status status="PASS" starttime="20230629 11:33:23.609" endtime="20230629 11:33:46.131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
